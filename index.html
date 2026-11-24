@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <title>ムシバコ（リンクまとめ）</title>
+  <style>
+    :root {
+      --paper: #F7F5FA;
+      --ink: #343B5B;
+      --white: #FFFFFF;
+      --pink: #D9C5F2;
+      --pink-deep: #A98BD8;
+      --soft-pink: #F5D3E2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100svh;
+      padding: 32px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DotGothic16", "Hiragino Maru Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    }
+
+    .profile {
+      width: min(100%, 430px);
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .avatar {
+      max-width: 100%;
+      aspect-ratio: 1;
+      margin: 0 0 24px;
+      display: grid;
+      place-items: center;
+      border: 5px solid var(--pink);
+      background: var(--white);
+      box-shadow: 0 5px 18px rgba(105, 83, 145, .10);
+      color: var(--pink-deep);
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .bio {
+      margin: 16px 0 34px;
+      font-size:0.91rem;
+      line-height: 1.9;
+      letter-spacing: .08em;
+    }
+
+    .links {
+      width: min(100%, 280px);
+      display: grid;
+      gap: 15px;
+    }
+
+    .link {
+      position: relative;
+      min-height: 56px;
+      padding: 11px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      color: var(--white);
+      background: var(--pink-deep);
+      text-decoration: none;
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      box-shadow: 0 4px 10px rgba(105, 83, 145, .12);
+      transition: transform .18s ease, opacity .18s ease, background .18s ease;
+      isolation: isolate;
+    }
+	.link-title {
+      font-size: 1.05rem;
+      line-height: 1.25;
+      font-weight: 700;
+      letter-spacing: .04em;
+      font-family: "Silkscreen", system-ui;
+    }
+
+    .link-description {
+      font-size: .72rem;
+      line-height: 1.35;
+      font-weight: 400;
+      letter-spacing: .03em;
+      opacity: .88;
+    }
+
+    .link:hover {
+      transform: translateY(-3px);
+      background: #9878C8;
+    }
+    .link:active { transform: translateY(0); background: #8667B5; }
+    .link:focus-visible {
+      outline: 3px solid var(--pink);
+      outline-offset: 5px;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 24px 18px; }
+      .avatar { width: 174px; border-width: 8px; }
+      .bio { margin-bottom: 28px; }
+      .links { width: min(100%, 270px); gap: 13px; }
+      .link { min-height: 60px; font-size: 1rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="profile">
+    <img class="avatar" role="img" src="211231.png">
+
+    <h1>こばしむ/kobashim</h1>
+    <p class="bio">インターネットラクガキニンゲン<br>ただのすけべなおたくです</p>
+
+    <nav class="links" aria-label="SNSリンク">
+      <a class="link" href="https://xfolio.jp/portfolio/mushibako" target="_blank" rel="noopener noreferrer">
+        <span class="link-title">Xfolio</span>
+        <span class="link-description">一次創作ログ</span>
+      </a>
+      <a class="link" href="https://www.pixiv.net/users/107222404" target="_blank" rel="noopener noreferrer">
+        <span class="link-title">Pixiv</span>
+        <span class="link-description">二次創作ログ</span>
+      </a>
+      <a class="link" href="https://bsky.app/profile/mushibako.bsky.social" target="_blank" rel="noopener noreferrer">
+        <span class="link-title">Bluesky</span>
+        <span class="link-description">雑多アカウント</span>
+      </a>
+      <a class="link" href="https://plsdb.com/profile/kobashi_m" target="_blank" rel="noopener noreferrer">
+        <span class="link-title">PULSE</span>
+        <span class="link-description">ゲーム記録</span>
+      </a>
+    </nav>
+  </main>
+</body>
+</html>
